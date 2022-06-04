@@ -1,0 +1,91 @@
+.uselesss_no1{
+    color: rgb(158, 119, 45);
+    background-color: rgb(255, 255, 255);
+}
+
+#useless_id{
+    color: rgb(255, 255, 255);
+    background-color: rgb(158, 119, 45);
+}
+
+/*headers -> class -> id -> in line style
+the weakest to the strongest*/
+
+
+/* Pseudoselectors */
+
+.hoverClass:hover{
+    color: red;
+    background-color: black;
+}
+
+li:first-child{
+    color: steelblue;
+    background-color: cadetblue;
+}
+li:nth-child(2){
+    color: green;
+    background-color: yellow;
+}
+
+
+.youtubeLink:link{
+    font-style: italic;
+    color: red;
+    /* font-color: red; */
+    font-size: 20px;
+    background-color: aqua;
+}
+.youtubeLink:visited{
+    color: black;
+    background-color: wheat;
+}
+/* end of Pseudoselectors */
+
+/* advanced selector */
+h2 + a{ 
+    /* for every anchor tag which comes after a h2 tag */
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    background-color: burlywood;
+}
+
+
+
+textarea ~ button{
+    /* for every text area followed by a button */ 
+    /* but they have to have the same parent  */
+    background-color: rgb(255, 255, 255);
+    color: rgb(158, 119, 45);
+}
+
+/* there are still left to note */
+
+/* end of anvanced selector */
+
+
+/* attribute selectors  */
+
+p[class=attClassP]{
+    /* attributes can be anything  */
+    align-items: center;
+    text-align: center;
+    color: darkblue;
+    background-color: aqua;
+    font-size: 20px;
+}
+
+img[src^="../img/"]{
+    /* not working , dont know why  */
+    border: solid 10px black;
+}
+
+h2[class~=bla3]{
+    background-color: blue;
+    color: wheat;
+}
+
+/* 1 hour 7 min */
+
+/* end of attribute selectors  */
